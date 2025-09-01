@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "mugesh das das gunasalen" 
+                        "mugesh hi hi gunasalen"
+                        "bye bye  issac issac ";
+}
+/* article{
+    background-image: linear-gradient(to right, lightblue,skyblue,blue,rgb(11, 11, 235),blue,skyblue,lightblue);
+} */
+#one{
+    grid-area: mugesh;
+    background-size: cover;
+}
+#two{
+    grid-area: gunasalen;
+    background-size: cover;
+}
+#three{
+    grid-area: das;
+    background-size: cover;
+}
+#four{
+    grid-area: issac;
+    background-size: cover;
+}
+#five{
+    grid-area: hi;
+    text-align: center;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    
+}
+#six{
+    background-size: cover;
+    grid-area: bye;
+}
