@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article
+        {
+            display:flex;
+            justify-content:center ;
+            align-items:center ;
+            flex-direction:column ;
+            height:100vh ;
+        }
+
+        section
+        {
+            height: 150px;
+            width: 300px;
+            background-color: gray;
+            transition-duration: 2s;
+            transition-property: border-radius transform background-color;
+            transition-timing-function: ease-in-out;
+        }
+
+         section:hover
+        {
+            transform: skew(180deg,180deg);
+            background-color:gray;
+            border-radius: 25%;
+        }
+
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: aquamarine;
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover
+        {
+            transform: translate(100px,200px);
+        }
+
+     
+    </style>
+</head>
+
+<body>
+    <article>
+    <section>
+          </section>
+        <div>
+
+        </div>
+    </article>
+</body>
+
+</html>
+
+<!-- Transition Types
+Scale->scale
+Rotate->rotate
+Skew->skewx(),skewy(),skew()
+Translate->translatex(),translatey(),translate() -->
